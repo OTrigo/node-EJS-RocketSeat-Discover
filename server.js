@@ -7,32 +7,35 @@ app.get("/", function(req, res) {
   const items = [
     {
       title:"D",
-      message:"Desenvolver aplicações/serviços de forma fácil"
+      message:"esenvolver aplicações/serviços de forma fácil"
     },
     {
       title:"E",
-      message:"EJS usa Js para renderizar HTML"
+      message:"JS usa Js para renderizar HTML"
     },
     {
       title:"M",
-      message:"Muito fácil de usar"
+      message:"uito fácil de usar"
     },
     {
       title:"A",
-      message:"A mais prática forma de criar serviços"
+      message:" mais prática forma de criar serviços"
     },
     {
       title:"I",
-      message:"Infinidade de utilidades"
+      message:"nfinidade de utilidades"
     },
     {
       title:"S",
-      message:"Sintaxe simples"
+      message:"intaxe simples"
     }
   ]
 
+  const subtitle = "Uma linguagem de modelagem para a criação de páginas HTML utilizando Js"
+
   res.render("pages/index", {
     qualitys: items,
+    subtitle: subtitle,
   })
 })
 
